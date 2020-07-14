@@ -1,22 +1,56 @@
+$primaryColor : #FEFEFE;
+$SecondaryColor: #0E4CA8;
+$fontColorLight: #EAEAEA;
+$whiteColor: #ffffff;
+
+
 header {
-  background: url('../Images/Rectangle\ 4.svg');
+  background: url('../assets/Images/Rectangle\ 4.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 1024.02px;
   padding: 2.5rem 0rem;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    bottom: -50px;
+    background: transparent;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: inset 0 0 10px #fffefefb;
+    animation: infinite linear animate 4s;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+
+    99% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(-1800%);
+      opacity: 0;
+    }
+  }
+
   .header__section__content {
     margin-top: 4.5rem;
 
     .lead__text {
-      // font-family: Segoe UI;
+      font-family: Segoe UI;
       font-style: normal;
       font-weight: bold;
       font-size: 50px;
       line-height: 80px;
-    
-      color: #FEFEFE;
+      color: $primaryColor;
     }
 
     .subordinate__text {
@@ -26,7 +60,7 @@ header {
       font-weight: normal;
       font-size: 22px;
       line-height: 37px;
-      color: #FEFEFE;
+      color: $primaryColor;
     }
 
     .subordinate__text-two {
@@ -36,17 +70,15 @@ header {
       font-weight: 600;
       font-size: 20px;
       line-height: 32px;
-
-      color: #FEFEFE;
+      color: $primaryColor;
     }
 
     .text__input {
       width: 300px;
       height: 60px;
       background: transparent;
-      border: 2px solid #FEFEFE;
+      border: 2px solid $primaryColor;
       box-sizing: border-box;
-      color: #ffffff;
       border-radius: 12px 0px 0px 12px;
       padding: 0.3rem 1.2rem;
 
@@ -56,8 +88,6 @@ header {
       font-size: 18px;
       line-height: 32px;
       /* identical to box height */
-
-
       color: #EAEAEA;
     }
 
@@ -65,7 +95,7 @@ header {
       width: 160px;
       height: 60px;
       margin: -6px 0px 0px -5px;
-      background: #FEFEFE;
+      background: $primaryColor;
       border-radius: 0px 12px 12px 0px;
 
       font-family: Segoe UI;
@@ -76,7 +106,7 @@ header {
       /* identical to box height */
 
 
-      color: #0E4CA8;
+      color: $SecondaryColor;
     }
   }
 

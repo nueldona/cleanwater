@@ -4,13 +4,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../assets/segoe-ui-4-cufonfonts/Segoe\ UI.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url('../assets/segoe-ui-4-cufonfonts/Segoe\ UI\ Bold.ttf') format('ttf');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
 
 body {
   width: 100%;
   height: 100%;
   color: #293043;
-  // font-family:;
+  font-family: SegoeUI;
   /* background: #000000; */
 }
 

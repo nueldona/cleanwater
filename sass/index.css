@@ -1,11 +1,37 @@
 header {
-  background: url("../Images/Rectangle 4.svg");
+  background: url("../assets/Images/Rectangle 4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 1024.02px;
   padding: 2.5rem 0rem;
+  position: relative;
+  overflow: hidden;
+}
+
+header span {
+  position: absolute;
+  bottom: -50px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: inset 0 0 10px #fffefefb;
+  animation: infinite linear animate 4s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1800%);
+    opacity: 0;
+  }
 }
 
 header .header__section__content {
@@ -46,7 +72,6 @@ header .header__section__content .text__input {
   background: transparent;
   border: 2px solid #FEFEFE;
   box-sizing: border-box;
-  color: #ffffff;
   border-radius: 12px 0px 0px 12px;
   padding: 0.3rem 1.2rem;
   font-family: Segoe UI;
@@ -98,12 +123,28 @@ header .header__section__img .mockUp__2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url("../assets/segoe-ui-4-cufonfonts/Segoe UI.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUIBold';
+  src: url("../assets/segoe-ui-4-cufonfonts/Segoe UI Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
   width: 100%;
   height: 100%;
   color: #293043;
+  font-family: SegoeUI;
   /* background: #000000; */
 }
 
