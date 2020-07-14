@@ -1,0 +1,103 @@
+header {
+  background: url('../Images/Rectangle\ 4.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1024.02px;
+  padding: 2.5rem 0rem;
+  .header__section__content {
+    margin-top: 4.5rem;
+
+    .lead__text {
+      // font-family: Segoe UI;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 80px;
+    
+      color: #FEFEFE;
+    }
+
+    .subordinate__text {
+      margin-top: 1rem;
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 37px;
+      color: #FEFEFE;
+    }
+
+    .subordinate__text-two {
+      margin-top: 4rem;
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+
+      color: #FEFEFE;
+    }
+
+    .text__input {
+      width: 300px;
+      height: 60px;
+      background: transparent;
+      border: 2px solid #FEFEFE;
+      box-sizing: border-box;
+      color: #ffffff;
+      border-radius: 12px 0px 0px 12px;
+      padding: 0.3rem 1.2rem;
+
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      /* identical to box height */
+
+
+      color: #EAEAEA;
+    }
+
+    .btn {
+      width: 160px;
+      height: 60px;
+      margin: -6px 0px 0px -5px;
+      background: #FEFEFE;
+      border-radius: 0px 12px 12px 0px;
+
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 32px;
+      /* identical to box height */
+
+
+      color: #0E4CA8;
+    }
+  }
+
+  .header__section__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    img  {
+      width: 300px;
+      height: 595.91px;
+      left: 772px;
+      top: 181px;
+    }
+
+    .mockUp__2 {
+      position: absolute;
+      width: 300px;
+      height: 595.91px;
+      left: 48%;
+      top: 50%;
+    }
+  }
+}
+
