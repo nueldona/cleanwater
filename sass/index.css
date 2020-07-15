@@ -7,7 +7,6 @@ header {
   height: 1024.02px;
   padding: 2.5rem 0rem;
   position: relative;
-  overflow: hidden;
 }
 
 header span {
@@ -39,6 +38,7 @@ header .header__section__content {
 }
 
 header .header__section__content .lead__text {
+  font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -66,6 +66,12 @@ header .header__section__content .subordinate__text-two {
   color: #FEFEFE;
 }
 
+header .header__section__content .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
 header .header__section__content .text__input {
   width: 300px;
   height: 60px;
@@ -83,10 +89,13 @@ header .header__section__content .text__input {
   color: #EAEAEA;
 }
 
+header .header__section__content .text__input::placeholder {
+  color: #EAEAEA;
+}
+
 header .header__section__content .btn {
-  width: 160px;
+  width: 140px;
   height: 60px;
-  margin: -6px 0px 0px -5px;
   background: #FEFEFE;
   border-radius: 0px 12px 12px 0px;
   font-family: Segoe UI;
@@ -107,8 +116,6 @@ header .header__section__img {
 header .header__section__img img {
   width: 300px;
   height: 595.91px;
-  left: 772px;
-  top: 181px;
 }
 
 header .header__section__img .mockUp__2 {
@@ -119,6 +126,320 @@ header .header__section__img .mockUp__2 {
   top: 50%;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  header .header__section__img img {
+    width: 16.75em;
+    height: 35.244em;
+  }
+  header .header__section__img .mockUp__2 {
+    width: 16.75em;
+    height: 35.244em;
+    left: 48%;
+  }
+}
+
+@media only screen and (min-width: 752px) and (max-width: 995px) {
+  header {
+    background: url("../assets/Images/Rectangle 4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100em;
+  }
+  header .header__section__img {
+    margin-top: 4rem;
+  }
+  header .header__section__img img {
+    width: 300px;
+    height: 595.91px;
+  }
+  header .header__section__img .mockUp__2 {
+    position: absolute;
+    width: 300px;
+    height: 595.91px;
+    left: 37%;
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 640px) {
+  header {
+    height: 100em;
+  }
+  header .header__section__img {
+    margin-top: 4rem;
+  }
+  header .header__section__img img {
+    width: 13.75em;
+    height: 28em;
+  }
+  header .header__section__img .mockUp__2 {
+    width: 13.75em;
+    height: 28em;
+    left: 38%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 95em;
+  }
+  header .header__section__img {
+    margin-top: 4rem;
+  }
+  header .header__section__img img {
+    width: 12.75em;
+    height: 26em;
+  }
+  header .header__section__img .mockUp__2 {
+    width: 12.75em;
+    height: 26em;
+    left: 38%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  header {
+    padding: 2.5rem 0.5rem 3rem 0.5rem;
+    height: 100em;
+  }
+  header .header__section__img {
+    margin-top: 4rem;
+  }
+  header .header__section__img img {
+    width: 11.75em;
+    height: 24.5em;
+  }
+  header .header__section__img .mockUp__2 {
+    width: 12.75em;
+    height: 24.5em;
+    left: 38%;
+  }
+  header .header__section__content .text__input {
+    width: 240px;
+  }
+  header .header__section__content .btn {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+
+.App__features {
+  margin-top: 4rem;
+  padding: 0rem 0rem 8rem 0rem;
+}
+
+.App__features .App__features__details h1 {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
+  color: #191919;
+}
+
+.App__features .App__features__details p {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+  color: #191919;
+}
+
+.App__features .App__features__details .method {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.App__features .App__features__details .method p {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 32px;
+  color: #0E4CA8;
+}
+
+.App__features .App__features__details .method p i {
+  color: #000000;
+  align-self: center;
+  margin: 0px 1rem;
+}
+
+.App__features .App__features__content {
+  margin-top: 4rem;
+}
+
+.App__features .App__features__content .card {
+  border: none;
+  width: 16em;
+  margin: 0 auto;
+}
+
+.App__features .App__features__content .card .img {
+  width: 13.625em;
+  height: 13.625em;
+  margin: 0 auto;
+  padding: 3.5rem;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(8, 35, 48, 0.25);
+  border-radius: 12px;
+}
+
+.App__features .App__features__content .card .card-title {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #191919;
+}
+
+.App__features .App__features__content .card .card-text {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  color: #4D4D4D;
+}
+
+@media only screen and (min-width: 470px) and (max-width: 640px) {
+  .App__features .App__features__details .method p {
+    font-size: 18px;
+  }
+  .App__features .App__features__content .card {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .App__features .App__features__details p {
+    font-size: 20px;
+  }
+  .App__features .App__features__details .method p {
+    font-size: 16px;
+  }
+  .App__features .App__features__details .method p i {
+    margin: 0rem 0.6rem;
+  }
+  .App__features .App__features__content .card {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .App__features .App__features__details p {
+    font-size: 20px;
+  }
+  .App__features .App__features__details .method p {
+    font-size: 13px;
+  }
+  .App__features .App__features__details .method p i {
+    margin: 0rem 0.4rem;
+  }
+  .App__features .App__features__content .card {
+    margin: 1rem auto;
+  }
+}
+
+.App__partners {
+  padding: 3rem 0rem;
+}
+
+.App__partners .App__partners__details {
+  margin: 0 auto;
+}
+
+.App__partners .App__partners__details h4 {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #191919;
+}
+
+.App__partners .App__partners__details .line {
+  width: 110px;
+  height: 0px;
+  border: 2px solid #000000;
+  transform: rotate(90deg);
+  margin: 5rem auto 1.5rem auto;
+}
+
+.App__partners .App__partners__details .img {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App__partners .App__partners__img {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.App__partners .App__partners__img h4 {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 124%;
+  letter-spacing: -0.04em;
+  color: #191919;
+}
+
+.App__partners .App__partners__img .img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.App__partners .App__partners__img .img img {
+  width: 12em;
+  height: 10em;
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .App__partners .App__partners__img .img img {
+    width: 11.5em;
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .App__partners .App__partners__img .img img {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  .App__partners .App__partners__img .img img {
+    width: 8em;
+    height: 8em;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  .App__partners .App__partners__img .img img {
+    width: 12em;
+    height: 8em;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -127,14 +448,14 @@ header .header__section__img .mockUp__2 {
 }
 
 @font-face {
-  font-family: 'SegoeUI';
+  font-family: 'Segoe UI';
   src: url("../assets/segoe-ui-4-cufonfonts/Segoe UI.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'SegoeUIBold';
+  font-family: 'Segoe UIBold';
   src: url("../assets/segoe-ui-4-cufonfonts/Segoe UI Bold.ttf") format("ttf");
   font-weight: bold;
   font-style: normal;
@@ -143,9 +464,13 @@ header .header__section__img .mockUp__2 {
 body {
   width: 100%;
   height: 100%;
-  color: #293043;
-  font-family: SegoeUI;
+  color: #EAEAEA;
+  font-family: Segoe UI;
   /* background: #000000; */
+}
+
+article {
+  overflow: hidden;
 }
 
 img {

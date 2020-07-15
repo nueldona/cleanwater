@@ -4,7 +4,7 @@ function createBubble() {
   const header = document.querySelector('header');
   const createElement = document.createElement('span');
 
-  let size = Math.random() * 60;
+  let size = Math.random() * 80;
 
   createElement.style.width = size + 'px';
   createElement.style.height = size + 'px';

@@ -2,6 +2,8 @@ $primaryColor : #FEFEFE;
 $SecondaryColor: #0E4CA8;
 $fontColorLight: #EAEAEA;
 $whiteColor: #ffffff;
+$fontColorDark : #191919;
+$black : #000000;
 
 
 header {
@@ -13,7 +15,8 @@ header {
   height: 1024.02px;
   padding: 2.5rem 0rem;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
+  // overflow-x: hidden;
 
   span {
     position: absolute;
@@ -72,7 +75,12 @@ header {
       line-height: 32px;
       color: $primaryColor;
     }
-
+    
+    .form {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+    }
     .text__input {
       width: 300px;
       height: 60px;
@@ -88,13 +96,17 @@ header {
       font-size: 18px;
       line-height: 32px;
       /* identical to box height */
-      color: #EAEAEA;
+      color: $fontColorLight;
+      &::placeholder {
+        color: $fontColorLight;
+      }
+
     }
 
     .btn {
-      width: 160px;
+      width: 140px;
       height: 60px;
-      margin: -6px 0px 0px -5px;
+      // margin: -6px 0px 0px -5px;
       background: $primaryColor;
       border-radius: 0px 12px 12px 0px;
 
@@ -117,8 +129,6 @@ header {
     img  {
       width: 300px;
       height: 595.91px;
-      left: 772px;
-      top: 181px;
     }
 
     .mockUp__2 {
@@ -131,3 +141,134 @@ header {
   }
 }
 
+
+// RESPONSIVENESS OF THE HEADER 
+
+
+// small desktop and big tablet
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  
+  header {
+    .header__section__img {
+
+      img  {
+        width: 16.75em;
+        height: 35.244em;
+      }
+  
+      .mockUp__2 {
+        width: 16.75em;
+        height: 35.244em;
+        left: 48%;
+      }
+    }
+  }
+}
+
+
+// TABLET
+@media only screen and (min-width: 752px) and (max-width: 995px){
+
+  header { 
+    background: url('../assets/Images/Rectangle\ 4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100em;
+    .header__section__img {
+      margin-top: 4rem;
+      img  {
+        width: 300px;
+        height: 595.91px;
+      }
+  
+      .mockUp__2 {
+        position: absolute;
+        width: 300px;
+        height: 595.91px;
+        left: 37%;
+        top: 50%;
+      }
+    }
+  }
+}
+
+
+
+// small tablet and big mobile
+@media only screen and (min-width: 470px) and (max-width: 640px) {
+
+  header {
+    height: 100em;
+    .header__section__img {
+      margin-top: 4rem;
+      img  {
+        width: 13.75em;
+        height: 28em;
+      }
+  
+      .mockUp__2 {
+        width: 13.75em;
+        height: 28em;
+        left: 38%;
+      }
+    }
+  }
+}
+
+
+// MOBILE
+@media only screen and (max-width: 470px) {
+  
+  header {
+    height: 95em;
+    .header__section__img {
+      margin-top: 4rem;
+      img  {
+        width: 12.75em;
+        height: 26em;
+      }
+  
+      .mockUp__2 {
+        width: 12.75em;
+        height: 26em;
+        left: 38%;
+      }
+    }
+  }
+}
+
+// SMALL MOBILE 
+
+@media only screen and (max-width: 380px) {
+  
+  header {
+    padding: 2.5rem 0.5rem 3rem 0.5rem;
+    height: 100em;
+    .header__section__img {
+      margin-top: 4rem;
+      img  {
+        width: 11.75em;
+        height: 24.5em;
+      }
+  
+      .mockUp__2 {
+        width: 12.75em;
+        height: 24.5em;
+        left: 38%;
+      }
+    }
+
+    .header__section__content {
+
+      .text__input {
+        width: 240px;
+      }  
+      .btn {
+        width: 120px;
+        font-size: 16px;
+      }
+    }  
+  }
+}

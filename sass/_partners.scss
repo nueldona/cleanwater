@@ -1,0 +1,110 @@
+.App__partners {
+  padding: 3rem 0rem;
+
+  .App__partners__details {
+    margin: 0 auto;
+    h4 {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 48px;
+      color: $fontColorDark ;
+    }
+
+    .line {
+      width: 110px;
+      height: 0px;
+      border: 2px solid $black;
+      transform: rotate(90deg);
+      margin: 5rem auto 1.5rem auto;
+    }
+
+    .img {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .App__partners__img {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    h4 {
+      font-family: Segoe UI;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 124%;
+      letter-spacing: -0.04em;
+      color: $fontColorDark;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      img {
+        width: 12em;
+        height: 10em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .App__partners {
+    .App__partners__img {
+      .img {
+        img {
+          width: 11.5em;
+          height: 10em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 980px) {
+  .App__partners {
+    .App__partners__img {
+      .img {
+        img {
+          width: 8em;
+          height: 8em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  .App__partners {
+    .App__partners__img {
+      .img {
+        img {
+          width: 8em;
+          height: 8em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 750px) {
+  .App__partners {
+    .App__partners__img {
+      .img {
+        img {
+          width: 12em;
+          height: 8em;
+        }
+      }
+    }
+  }
+}
