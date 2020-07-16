@@ -1,50 +1,50 @@
-// // water bubbles
+// water bubbles
 
-// function createBubble() {
-//   const header = document.querySelector('header');
-//   const main = document.querySelector('.main');
+function createBubble() {
+  const header = document.querySelector('header');
+  const main = document.querySelector('.main');
 
-//   const createElement = document.createElement('span');
-//   const createBigElement = document.createElement('span');
+  const createElement = document.createElement('span');
+  const createBigElement = document.createElement('span');
 
-//   let size = Math.random() * 80;
+  let size = Math.random() * 80;
 
-//   // size
-//   createElement.style.width = size + 'px';
-//   createElement.style.height = size + 'px';
-//   createElement.style.left = Math.random() * innerWidth + 'px';
-
-
-//   // appending elements
-//   header.appendChild(createElement);
-
-//   setTimeout(() => {
-//     createElement.remove()
-//   }, 3000);
-// }
-
-// setInterval(createBubble, 20)
+  // size
+  createElement.style.width = size + 'px';
+  createElement.style.height = size + 'px';
+  createElement.style.left = Math.random() * innerWidth + 'px';
 
 
-// // big size bubble
+  // appending elements
+  header.appendChild(createElement);
 
-// function createBigBubble() {
-//   const main = document.querySelector('.main');
-//   const createBigElement = document.createElement('span');
+  setTimeout(() => {
+    createElement.remove()
+  }, 3000);
+}
 
-//   let bigSize = Math.random() * 100;
+setInterval(createBubble, 20)
 
-//   // big size
-//   createBigElement.style.width = bigSize + 'px';
-//   createBigElement.style.height = bigSize + 'px';
-//   createBigElement.style.left = Math.random() * innerWidth + 'px';
 
-//   // appending elements
-//   main.appendChild(createBigElement);
+// big size bubble
 
-//   setTimeout(() => {
-//     createBigElement.remove()
-//   }, 8000);
-// }
+function createBigBubble() {
+  const main = document.querySelector('.main');
+  const createBigElement = document.createElement('span');
 
-// setInterval(createBigBubble, 20)
+  let bigSize = Math.random() * 100;
+
+  // big size
+  createBigElement.style.width = bigSize + 'px';
+  createBigElement.style.height = bigSize + 'px';
+  createBigElement.style.left = Math.random() * innerWidth + 'px';
+
+  // appending elements
+  main.appendChild(createBigElement);
+
+  setTimeout(() => {
+    createBigElement.remove()
+  }, 12000);
+}
+
+setInterval(createBigBubble, 20)

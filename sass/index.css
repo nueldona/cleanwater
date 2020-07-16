@@ -248,10 +248,65 @@ header .header__section__img .mockUp__2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(4px);
   border-radius: 12px;
+  transition: 1s;
+}
+
+.App__screen .App__screen__mockup-1 .image-fit img:hover {
+  transform: scale(1.3);
 }
 
 .App__screen .App__screen__mockup-1 .one {
   margin-top: 5rem;
+}
+
+@media screen and (max-width: 950px) and (min-width: 850px) {
+  .App__screen .App__screen__mockup-1 .image-fit {
+    padding: 2rem 2rem;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit img:hover {
+    transform: scale(1.2);
+  }
+  .App__screen .App__screen__mockup-1 .one {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .App__screen h1 {
+    font-size: 40px;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit {
+    padding: 2rem 2rem;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit img:hover {
+    transform: scale(1.2);
+  }
+  .App__screen .App__screen__mockup-1 .one {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .App__screen .App__screen__mockup-1 {
+    display: block;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit {
+    padding: 2rem 3rem;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit img {
+    border: 1px solid #191919;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 12px;
+    transition: 1s;
+  }
+  .App__screen .App__screen__mockup-1 .image-fit img:hover {
+    transform: scale(1.2);
+  }
+  .App__screen .App__screen__mockup-1 .one {
+    margin-top: 0rem;
+  }
 }
 
 main {
