@@ -19,6 +19,7 @@
   <body>
     <article>
       
+      <!-- HEADER -->
       <header>
         <div class="container">
           <nav class="navbar navbar-expand-lg">
@@ -49,8 +50,10 @@
         
       </header>
 
+
       <!-- PAGE CONTENT -->
-      <main>
+
+      <main class="main">
         <!-- APP FEATURES -->
 
         <section class="App__features">
@@ -110,16 +113,51 @@
           </div>
         </section>
 
+
         <!-- APP SCREENS -->
-        <section class="App__screen">
+        <section class="App__screen w-100 h-100">
           <div class="container">
             <h1 class="text-center mb-4">App Screen</h1>
+            
+            <div class="App__screen__mockup">
+              
+              <div class="App__screen__mockup-1">
+                <div class=" image-fit one">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here-3.png" alt="" srcset="">
+                </div>
+                <div class="image-fit">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here-7.png" alt="" srcset="">
+                </div>
+                <div class=" image-fit one">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here-2.png" alt="" srcset="">
+                </div>
+              </div>
+      
+              <div class="App__screen__mockup-1">
+                <div class="one image-fit">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here.png" alt="" srcset="">
+                </div>
+                <div class=" image-fit">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here-1.png" alt="" srcset="">
+                </div>
+                <div class="one image-fit">
+                  <img src="/assets/Mockups/FlatMocks/Screen Here-6.png" alt="" srcset="">
+                </div>
+              </div>  
+            </div> 
             
           </div>
         </section>
 
-         <!-- APP SCREENS -->
-         <section class="App__partners w-100 h-100">
+
+         <!-- APP PARTNERS -->
+        <section class="App__partners w-100 h-100">
+
+          <section class="App__partners__blobs">
+            <div class="blobs blobs__1"></div>
+            <div class="blobs blobs__2"></div>
+          </section>
+
           <div class="container">
             <div class="App__partners__details">
               <h4 class="text-center mb-4">They already think we are cool </h4>
@@ -136,32 +174,55 @@
               <div class="img">
                 <div class="container">
 
-                  <div class="col-lg-5 col-5">
-                    <img src="/assets/Images/PepsiCo-logo-Feature-removebg-preview.png" alt="pepsico img">
-
-                    <img src="/assets/Images/The_Water_Project_Logo-removebg-preview.png" alt="the water project img">
-                  </div>
-                   
-                  <div class="col-lg-5 col-5">
-                    <img src="/assets/Images/UN-Water-logo-removebg-preview.png" alt="Un waters img">
-                    <img src="/assets/Images/WaterOrgLogo-removebg-preview.png" alt="water Org img">
-                  </div>
-                  
-                  <div class="col-lg-2 col-2">
-                    <img src="/assets/Images/clean-water-fund-logo-removebg-preview.png" alt="clean water funds img ">
+                  <div class="row mb-2">
+                    <div class="col-sm">
+                      <img src="/assets/Images/PepsiCo-logo-Feature-removebg-preview.png" alt="pepsico img">
+                    </div>
+                    <div class="col-sm">
+                      <img src="/assets/Images/UN-Water-logo-removebg-preview.png" alt="Un waters img">
+                    </div>
+                    <div class="col-sm">
+                      <img src="/assets/Images/WaterOrgLogo-removebg-preview.png" alt="water Org img">
+                    </div>
+                    <div class="col-sm">
+                      <img src="/assets/Images/clean-water-fund-logo-removebg-preview.png" alt="clean water funds">
+                    </div>
                   </div>
                   
                 </div>
               </div>
             </section>
-
           </div>
         </section>
-
-
       </main>
+      
+      <!-- FOOTER SECTION -->
+
+      <footer class="w-100 h-100">
+        <div class="container">
+          <div class="social__medias">
+
+            <div class="brand__social">
+              <a class="navbar-brand"><img src="/assets/Images/Logo.png" alt="brand logo"></a>
+            </div>  
+
+            <div>
+              <ul class="media__icons">
+
+                <li><a href="#" class="socialLink"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
+                
+                </ul>
+            </div>
+          </div>
+          <p class="text-center">Copyright@CleanWaterScanner. All rights reserved </p>
+        </div>
+      </footer >
     </article>
 
+    
     <script src="index.js"></script>
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->

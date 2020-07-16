@@ -217,11 +217,70 @@ header .header__section__img .mockUp__2 {
     left: 38%;
   }
   header .header__section__content .text__input {
-    width: 240px;
+    width: 220px;
   }
   header .header__section__content .btn {
-    width: 120px;
+    width: 100px;
     font-size: 16px;
+  }
+}
+
+.App__screen h1 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
+  color: #191919;
+}
+
+.App__screen .App__screen__mockup-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(250px, auto);
+}
+
+.App__screen .App__screen__mockup-1 .image-fit {
+  padding: 4rem 4rem;
+}
+
+.App__screen .App__screen__mockup-1 .image-fit img {
+  border: 1px solid #191919;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+
+.App__screen .App__screen__mockup-1 .one {
+  margin-top: 5rem;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+main span {
+  position: absolute;
+  bottom: -50px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: inset 0 0 10px #0E4CA8;
+  animation: infinite linear animate 10s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1850%);
+    opacity: 0;
   }
 }
 
@@ -243,7 +302,7 @@ header .header__section__img .mockUp__2 {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 32px;
   text-align: center;
   color: #191919;
@@ -262,8 +321,9 @@ header .header__section__img .mockUp__2 {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 32px;
+  text-align: center;
   color: #0E4CA8;
 }
 
@@ -297,8 +357,8 @@ header .header__section__img .mockUp__2 {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 29px;
+  line-height: 43px;
   color: #191919;
 }
 
@@ -306,10 +366,11 @@ header .header__section__img .mockUp__2 {
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 32px;
-  text-align: left;
+  text-align: center;
   color: #4D4D4D;
+  padding-left: 0.5rem;
 }
 
 @media only screen and (min-width: 470px) and (max-width: 640px) {
@@ -349,10 +410,14 @@ header .header__section__img .mockUp__2 {
   .App__features .App__features__content .card {
     margin: 1rem auto;
   }
+  .App__features .App__features__content .card .card-text {
+    font-size: 18px;
+  }
 }
 
 .App__partners {
-  padding: 3rem 0rem;
+  position: relative;
+  padding: 3rem 0rem 4rem 0rem;
 }
 
 .App__partners .App__partners__details {
@@ -412,6 +477,27 @@ header .header__section__img .mockUp__2 {
   height: 10em;
 }
 
+.App__partners .App__partners__blobs {
+  display: block;
+}
+
+.App__partners .App__partners__blobs .blobs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.App__partners .App__partners__blobs .blobs__1 {
+  background: url("../assets/Images/Vector.svg");
+  background-repeat: no-repeat;
+  left: 75%;
+}
+
+.App__partners .App__partners__blobs .blobs__2 {
+  background: url("../assets/Images/Vector (1).svg");
+  background-repeat: no-repeat;
+}
+
 @media only screen and (min-width: 980px) and (max-width: 1200px) {
   .App__partners .App__partners__img .img img {
     width: 11.5em;
@@ -424,19 +510,84 @@ header .header__section__img .mockUp__2 {
     width: 8em;
     height: 8em;
   }
+  .App__partners .App__partners__blobs .blobs {
+    width: 80%;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 750px) {
+  .App__partners .App__partners__img .img {
+    align-items: center;
+  }
   .App__partners .App__partners__img .img img {
     width: 8em;
     height: 8em;
   }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 750px) {
+@media only screen and (min-width: 350px) and (max-width: 550px) {
+  .App__partners .App__partners__details h4 {
+    font-size: 28px;
+  }
+  .App__partners .App__partners__details .line {
+    width: 90px;
+  }
+  .App__partners .App__partners__img h4 {
+    font-size: 28px;
+  }
   .App__partners .App__partners__img .img img {
-    width: 12em;
-    height: 8em;
+    width: 10em;
+    height: 7em;
+  }
+}
+
+footer {
+  background: #0E4CA8;
+  padding: 2rem 0rem 1rem 0rem;
+}
+
+footer .social__medias {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+footer .social__medias .media__icons {
+  list-style-type: none;
+  display: flex;
+}
+
+footer .social__medias .media__icons li {
+  margin: 0 0.8rem;
+}
+
+footer .social__medias .media__icons li a {
+  color: #ffffff;
+}
+
+footer p {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #DCDCDC;
+}
+
+@media screen and (max-width: 380px) {
+  footer .social__medias .brand__social {
+    width: 40%;
+  }
+  footer .social__medias .media__icons li {
+    margin: 0 0.5rem;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
 
@@ -466,6 +617,7 @@ body {
   height: 100%;
   color: #EAEAEA;
   font-family: Segoe UI;
+  font-style: normal;
   /* background: #000000; */
 }
 
