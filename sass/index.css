@@ -90,7 +90,7 @@ header .header__section__content .text__input {
 }
 
 header .header__section__content .text__input::placeholder {
-  color: #4d4d4d;
+  color: #d5d5d5;
 }
 
 header .header__section__content .btn {
@@ -642,7 +642,7 @@ footer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #4d4d4d;
+  color: #d5d5d5;
 }
 
 @media screen and (max-width: 380px) {
