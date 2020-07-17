@@ -25,7 +25,7 @@ header {
     background: transparent;
     border-radius: 50%;
     pointer-events: none;
-    box-shadow: inset 0 0 10px #fffefefb;
+    box-shadow: inset 0 0 10px #fffefe46;
     animation: infinite linear animate 4s;
   }
 
@@ -52,8 +52,8 @@ header {
       font-family: Segoe UI;
       font-style: normal;
       font-weight: bold;
-      font-size: 50px;
-      line-height: 80px;
+      font-size: 45px;
+      line-height: 70px;
       color: $primaryColor;
     }
 
@@ -62,8 +62,8 @@ header {
       font-family: Segoe UI;
       font-style: normal;
       font-weight: normal;
-      font-size: 22px;
-      line-height: 37px;
+      font-size: 20px;
+      line-height: 34px;
       color: $primaryColor;
     }
 
@@ -72,8 +72,8 @@ header {
       font-family: Segoe UI;
       font-style: normal;
       font-weight: 600;
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 19px;
+      line-height: 30px;
       color: $primaryColor;
     }
     
@@ -83,8 +83,8 @@ header {
       justify-content: start;
     }
     .text__input {
-      width: 300px;
-      height: 60px;
+      width: 280px;
+      height: 50px;
       background: transparent;
       border: 2px solid $primaryColor;
       box-sizing: border-box;
@@ -99,14 +99,14 @@ header {
       /* identical to box height */
       color: $fontColorLight;
       &::placeholder {
-        color: $fontColorLight;
+        color: #4d4d4d;
       }
 
     }
 
     .btn {
-      width: 140px;
-      height: 60px;
+      width: 120px;
+      height: 50px;
       // margin: -6px 0px 0px -5px;
       background: $primaryColor;
       border-radius: 0px 12px 12px 0px;
@@ -114,7 +114,7 @@ header {
       font-family: Segoe UI;
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 32px;
       /* identical to box height */
 
@@ -128,15 +128,15 @@ header {
     height: 100%;
     position: relative;
     img  {
-      width: 300px;
-      height: 595.91px;
+      width: 250px;
+      height: 496.59px;
     }
 
     .mockUp__2 {
       position: absolute;
-      width: 300px;
-      height: 595.91px;
-      left: 48%;
+      width: 250px;
+      height: 496.59px;
+      left: 25%;
       top: 50%;
     }
   }
@@ -153,13 +153,13 @@ header {
     .header__section__img {
 
       img  {
-        width: 16.75em;
-        height: 35.244em;
+        width: 15.75em;
+        height: 34.244em;
       }
   
       .mockUp__2 {
-        width: 16.75em;
-        height: 35.244em;
+        width: 15.75em;
+        height: 34.244em;
         left: 48%;
       }
     }

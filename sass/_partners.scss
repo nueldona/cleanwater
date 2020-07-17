@@ -8,13 +8,13 @@
       font-family: Segoe UI;
       font-style: normal;
       font-weight: 600;
-      font-size: 32px;
+      font-size: 28px;
       line-height: 48px;
       color: $fontColorDark ;
     }
 
     .line {
-      width: 110px;
+      width: 80px;
       height: 0px;
       border: 2px solid $black;
       transform: rotate(90deg);
@@ -37,7 +37,7 @@
       font-family: Segoe UI;
       font-style: normal;
       font-weight: 600;
-      font-size: 30px;
+      font-size: 28px;
       line-height: 124%;
       letter-spacing: -0.04em;
       color: $fontColorDark;

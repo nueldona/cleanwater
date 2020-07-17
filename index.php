@@ -1,3 +1,23 @@
+<?php
+
+// get value of email on submit
+  $email = $_POST['email'];
+
+  $conn = new mysqli('http://db4free.net:3306/','nueldona','nueldona','subdetails');
+	if($conn->connect_error){
+		echo "$conn->connect_error";
+		die('Connection Failed : '.$conn->connect_error);
+	} else {
+		$stmt = $conn->prepare("insert into emaildetails(email) values(?)");
+		$stmt->bind_param("s", $email);
+
+	}	  $stmt->execute();
+		echo "Registration successfully...";
+		$stmt->close();
+		$conn->close();
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,7 +43,7 @@
       <header>
         <div class="container">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand"><img src="/assets/Images/Logo.png" alt="brand logo"></a>
+            <a class="navbar-brand"><img src="assets/images/Logo.png" alt="brand logo"></a>
           </nav>
   
           <section class="header__section__content">
@@ -33,17 +53,17 @@
                 <p class="subordinate__text">Don’t just scan pictures and files. With CleanWater Scanner, you can scan any water you want to drink to make sure it is safe for drinking. It takes just seconds! </p>
                 <p class="subordinate__text-two"> CleanWater Scanner is coming soon. Be the first to know when we launch: </p>
                 
-                <form class="form" id="subscribers">
+                <form method="post" action="index.php" class="form" id="subscribers">
                   <input type="email" name="email" id="email" class="text__input" placeholder="Email Address" required>
-                  <input type="submit" value="Notify Me" class="btn" name="submit" data-toggle="modal" data-target="#myModal">
+                  <input type="submit" value="Notify Me" class="btn" name="submit">
                 </form>
               
               </div>
 
               <div class="col-lg-6">
                 <section class="header__section__img">
-                  <img src="/assets/Mockups/MockUp.png" alt="" class="mockUp__1">
-                  <img src="/assets/Mockups/MockUp2.png" alt="" class="mockUp__2">
+                  <img src="assets/Mockups/MockUp.png" alt="" class="mockUp__1">
+                  <img src="assets/Mockups/MockUp2.png" alt="" class="mockUp__2">
                 </section>
               </div>
             </div>
@@ -77,7 +97,7 @@
                 <div class="col-sm mb-3 col-lg-4" >
                   <div class="card text-center">
                     <div class ="img">
-                      <img src="/assets/Icons/qr-code-scan.svg" alt="">
+                      <img src="assets/Icons/qr-code-scan.svg" alt="">
                     </div>
                     <div class="card-body">
                       <h3 class="card-title mb-2">Quick Scan</h3>
@@ -89,7 +109,7 @@
                 <div class="col-sm mb-3 col-lg-4">
                   <div class="card text-center">
                     <div class ="img">
-                      <img src="/assets/Icons/visualization.svg" alt="">
+                      <img src="assets/Icons/visualization.svg" alt="">
                     </div>
                     <div class="card-body">
                       <h3 class="card-title mb-2">Retina Ready</h3>
@@ -101,7 +121,7 @@
                 <div class="col-sm mb-3 col-lg-4">
                   <div class="card text-center">
                     <div class ="img">
-                      <img src="/assets/Icons/bullseye.svg" alt="">
+                      <img src="assets/Icons/bullseye.svg" alt="">
                     </div>
                     <div class="card-body">
                       <h3 class="card-title mb-2">Accurate Result</h3>
@@ -125,25 +145,25 @@
               
               <div class="App__screen__mockup-1">
                 <div class=" image-fit one">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here-3.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here-3.png" alt="" srcset="">
                 </div>
                 <div class="image-fit">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here-7.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here-7.png" alt="" srcset="">
                 </div>
                 <div class=" image-fit one">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here-2.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here-2.png" alt="" srcset="">
                 </div>
               </div>
       
               <div class="App__screen__mockup-1">
                 <div class="one image-fit">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here.png" alt="" srcset="">
                 </div>
                 <div class=" image-fit">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here-1.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here-1.png" alt="" srcset="">
                 </div>
                 <div class="one image-fit">
-                  <img src="/assets/Mockups/FlatMocks/Screen Here-6.png" alt="" srcset="">
+                  <img src="assets/Mockups/FlatMocks/Screen Here-6.png" alt="" srcset="">
                 </div>
               </div>  
             </div> 
@@ -166,7 +186,7 @@
               <div class="line"></div>
 
               <div class="img">
-                <img src="/assets/Images/1_hQkaUtaMtweT-sHcM2qBAw-removebg-preview.png" alt="">
+                <img src="assets/Images/1_hQkaUtaMtweT-sHcM2qBAw-removebg-preview.png" alt="">
               </div>
             </div>
             
@@ -178,16 +198,16 @@
 
                   <div class="row mb-2">
                     <div class="col-sm">
-                      <img src="/assets/Images/PepsiCo-logo-Feature-removebg-preview.png" alt="pepsico img">
+                      <img src="assets/Images/PepsiCo-logo-Feature-removebg-preview.png" alt="pepsico img">
                     </div>
                     <div class="col-sm">
-                      <img src="/assets/Images/UN-Water-logo-removebg-preview.png" alt="Un waters img">
+                      <img src="assets/Images/UN-Water-logo-removebg-preview.png" alt="Un waters img">
                     </div>
                     <div class="col-sm">
-                      <img src="/assets/Images/WaterOrgLogo-removebg-preview.png" alt="water Org img">
+                      <img src="assets/Images/WaterOrgLogo-removebg-preview.png" alt="water Org img">
                     </div>
                     <div class="col-sm">
-                      <img src="/assets/Images/clean-water-fund-logo-removebg-preview.png" alt="clean water funds">
+                      <img src="assets/Images/clean-water-fund-logo-removebg-preview.png" alt="clean water funds">
                     </div>
                   </div>
                   
@@ -205,7 +225,7 @@
           <div class="social__medias">
 
             <div class="brand__social">
-              <a class="navbar-brand"><img src="/assets/Images/Logo.png" alt="brand logo"></a>
+              <a class="navbar-brand"><img src="assets/Images/Logo.png" alt="brand logo"></a>
             </div>  
 
             <div>
@@ -222,61 +242,17 @@
           <p class="text-center">Copyright@CleanWaterScanner. All rights reserved </p>
         </div>
       </footer >
-
-      <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h2 class="modal-title">Nice!</h2>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-              <p> We have received your email and we will be in touch.</p>
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
-            </div>
-      
-          </div>
-        </div>
-      </div>
     </article>
 
     
-    <script src="index.js"></script>
-    <script src="ajax.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
+    
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-
-    <script>
-      let tl = gsap.timeline({
-        scrollTriger: {
-          trigger: '.App__features',
-          start: "center"
-        }
-      });
-      tl.from('.App__features__content', {
-        x: 200,
-        opacity: 0,
-        duration: 2,
-      }, "+=1")
-      tl.from('.App__features__details', {
-        y: 100,
-        opacity: 0,
-        duration: 1.5,
-      },)
-
-    </script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="ajax.js"></script>
+   
   </body>
 </html>

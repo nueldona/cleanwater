@@ -1,7 +1,9 @@
 .App__screen {
+  width: 100%;
+  height:100%;
   h1 {
-    font-weight: 600;
-    font-size: 44px;
+    font-weight: 700;
+    font-size: 30px;
     line-height: 64px;
     color: #191919;
   }
@@ -59,7 +61,7 @@
 @media screen and (max-width: 850px) {
   .App__screen {
     h1 {
-      font-size: 40px;
+      font-size: 30px;
     }
   
     .App__screen__mockup-1 {

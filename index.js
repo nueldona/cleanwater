@@ -28,23 +28,23 @@ setInterval(createBubble, 20)
 
 // big size bubble
 
-function createBigBubble() {
-  const main = document.querySelector('.main');
-  const createBigElement = document.createElement('span');
+// function createBigBubble() {
+//   const main = document.querySelector('.main');
+//   const createBigElement = document.createElement('span');
 
-  let bigSize = Math.random() * 100;
+//   let bigSize = Math.random() * 100;
 
-  // big size
-  createBigElement.style.width = bigSize + 'px';
-  createBigElement.style.height = bigSize + 'px';
-  createBigElement.style.left = Math.random() * innerWidth + 'px';
+//   // big size
+//   createBigElement.style.width = bigSize + 'px';
+//   createBigElement.style.height = bigSize + 'px';
+//   createBigElement.style.left = Math.random() * innerWidth + 'px';
 
-  // appending elements
-  main.appendChild(createBigElement);
+//   // appending elements
+//   main.appendChild(createBigElement);
 
-  setTimeout(() => {
-    createBigElement.remove()
-  }, 12000);
-}
+//   setTimeout(() => {
+//     createBigElement.remove()
+//   }, 12000);
+// }
 
-setInterval(createBigBubble, 20)
+// setInterval(createBigBubble, 20)
